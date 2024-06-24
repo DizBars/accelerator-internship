@@ -1,4 +1,14 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/about";
+@import "blocks/support";
+@import "blocks/transformation";
+@import "blocks/participants";
+@import "blocks/footer";
