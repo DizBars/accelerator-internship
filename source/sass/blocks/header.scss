@@ -87,28 +87,13 @@
     background-color: $color-flamingo;
 }
 
-.header__ticker ul {
-    display: flex;
-    flex-direction: row;
+.header__ticker p {
+    display: inline-block;
     overflow: hidden;
     align-items: center;
-    gap: 30px;
-    animation: marquee 5s linear infinite;
+    animation: marquee 30s infinite linear;
     white-space: nowrap;
-    margin: 18px 12px;
     padding: 0;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(50%);
-    }
-}
-
-.header__ticker li {
     font-family: $ff-merriweather;
     font-size: 22px;
     font-weight: 400;
@@ -116,8 +101,18 @@
     color: $color-default-white;
     min-width: fit-content;
     text-transform: uppercase;
+    margin: 18px 12px;
 }
 
-.header__ticker p {
-    margin: 0;
+@keyframes marquee {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.header__ticker p:after {
+    content: 'Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели! • ';
 }
