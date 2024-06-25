@@ -11,8 +11,9 @@
     left: 0;
     z-index: 10;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     background-color: $color-flamingo;
+    overflow: hidden;
 }
 
 .footer p {

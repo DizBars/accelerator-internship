@@ -3,14 +3,31 @@
     flex-direction: row;
     gap: 87px;
     align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
     margin-bottom: 18px;
     padding: 0 27px;
+
+    @include vp-1366 {
+        padding: 0;
+        flex-direction: column;
+    }
+}
+
+.support__top-wrapper img {
+    @include vp-1366 {
+        width: 335px;
+    }
 }
 
 .support__bottom-wrapper {
     display: flex;
     flex-direction: row;
     gap: 16px;
+
+    @include vp-1366 {
+        flex-direction: column;
+    }
 }
 
 .support h3 {
@@ -20,6 +37,11 @@
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
+
+    @include vp-1366 {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 
 
@@ -94,4 +116,10 @@ table {
     font-size: 20px;
     line-height: 24px;
     color: $color-azure;
+}
+
+.support__picture img {
+    @include vp-1366 {
+        width: 375px;
+    }
 }

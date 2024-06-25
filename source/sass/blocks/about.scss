@@ -1,3 +1,9 @@
 .about {
     padding: 80px 45px;
+    max-width: 1366px;
+    margin: 0 auto;
+
+    @include vp-1366 {
+        padding: 0;
+    }
 }

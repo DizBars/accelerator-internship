@@ -6,6 +6,7 @@
     margin: 0;
     cursor: pointer;
     background-color: transparent;
+    transition: $trans-default;
 }
 
 .header__button {
@@ -13,11 +14,35 @@
     padding: 13px 49px;
     border-radius: 66px;
     border: 2px solid $color-mine-shaft;
+
+    @include vp-1366 {
+        width: 335px;
+        padding: 11px 30px;
+    }
 }
 
 .button__black {
     background-color: $color-mine-shaft;
     color: $color-default-white;
+
+    @include hover-focus {
+        color: $color-mine-shaft;
+        background-color: $color-saffron-mango;
+        border: 2px solid $color-saffron-mango;
+    }
+}
+
+.button__transparent {
+    @include vp-1366 {
+        border: 2px solid $color-default-white;
+        color: $color-mine-shaft;
+        background-color: $color-default-white;
+    }
+
+    @include hover-focus {
+        color: $color-default-white;
+        background-color: $color-mine-shaft;
+    }
 }
 
 .participants__button {
@@ -25,4 +50,9 @@
     border-radius: 62px;
     border: 1px solid $color-azure;
     padding: 6px 12px;
+
+    @include hover-focus {
+        color: $color-default-white;
+        background-color: $color-azure;
+    }
 }

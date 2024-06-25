@@ -1,5 +1,11 @@
 .participants {
     padding: 116px 72px 140px;
+    max-width: 1366px;
+    margin: 0 auto;
+
+    @include vp-1366 {
+        padding: 0;
+    }
 }
 
 .participants h2 {
@@ -12,6 +18,11 @@
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 59px;
+
+    @include vp-1366 {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 
 .participants ul {
@@ -29,6 +40,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include vp-1366 {
+        min-width: 375px;
+    }
 }
 
 .participants h3 {
